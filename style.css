@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#nav{
+
+    display: flex;
+    background-color: rgb(36, 34, 49);
+    color: white;
+    justify-content: space-between;
+    height: 60px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    position: sticky;
+
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+#logo:hover{
+    font-stretch: extra-condensed;
+    transform: scaleX(1.1);
+}
+
+#nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center ;
+    align-items: center;
+}
+
+#nav ul li{
+    cursor: pointer;
+}
+#nav ul li:hover{
+    transform: scaleX(1.1);
+    color:rgb(54, 234, 81);
+}
+#hem{
+    display: none;
+
+    top: 17px;
+
+}
+
+@media (max-width:768px) {
+   
+    #nav ul{
+        display: none;
+    }
+    #hem
+    {
+        display: block;
+        cursor: pointer;
+    }
+    #hem:hover{
+         font-weight: bolder;
+    }
+  }
+
+  .main{
+    display: flex;
+    /* padding-top: 9vh; */
+    padding-left: 9vw;
+    padding-right: 9vw;
+    width: 100%;
+    height: 595px;
+    /* background-color: rgb(68, 68, 81); */
+  }
+
+  .left ,.right{
+    height: 100%;
+    width: 50%;
+  }
+
+  #intro{
+    padding-top: 150px;
+    font-size: 2vw;
+     font-weight: bold;
+     font-size:  39px;
+     width: 100%;
+
+  }
+  .left{
+    padding-top: 52px;
+  }
+  #my-intro{
+            padding-top: 5vh;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 30px;
+  }
+
+  .right{
+    /* padding-top: 150px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .right img{
+    object-fit: fill;
+    /* background-repeat: no-repeat; */
+    width: 90%;
+    border-radius: 9px;
+    /* padding-left: 20px; */
+  }
+  @media(max-width:768px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height: fit-content;
+    }
+    #intro{
+        padding-top: 30px;
+    }
+
+    .left , .right{
+        width: 100%;
+        width: 100%;
+    }
+  }
+
+  #separate{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+  }
+
+  #skill-a{
+    text-decoration:  none;
+    color: inherit;
+  }
+
+  footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: gray;
+    text-align: center;
+    display: flex;
+     flex-direction:  column;
+  }
+
+  .footer-sec ul{
+    display: flex;
+    gap: 30px;
+    /* text-align: center; */
+    justify-content: center;
+    list-style: none;
+    padding-top: 10px;
+
+  }
+  
+  .skill-sec{
+    width: 100%;
+    padding-bottom: 40px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    
+  }
+ 
+  .skill-sec h1 , .projects h1{
+    margin-top: 40px;
+    font: bolder;
+    color: rgb(54, 234, 81);
+    text-align: center;
+  }
+  .skill-sec h2{
+    font:bolder;
+    color: rgb(54, 234, 81);
+    text-decoration: underline;
+  
+  }
+
+  .programming ul li img , .tec-frame ul li img{
+    width: 180px;
+    height: 180px;
+  }
+  .programming h2{
+    padding-top: 40px;
+  }
+  .programming ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  .programming ul li , .tec-frame ul li {
+           
+     width: 250px;
+     height: 250px;
+     border-radius:  9px ;
+     text-align: center;
+     border: solid rgb(54, 234, 81);
+  }
+
+  .tec-frame{
+    margin-top: 50px;
+  }
+
+  .tec-frame ul{
+
+    list-style: none;
+    padding-top: 20px;
+  }
+
+  .tec-frame ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, auto); */
+    gap: 10px;
+  }
+
+  .b-tech {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-top: 40px;
+    display: flex;
+    gap: 30px;
+  }
+  .b-tech img{
+    width: 170px;
+    height: 170px;
+  }
+
+  .projects{
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-top: 40px;
+  }
+  .education{
+    padding-bottom: 50px;
+  }
+
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(max-width:678px){
+    
+    .skill-sec , .projects ,.education{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .programming , .programming ul , .tec-frame ul ,.tec-frame , .b-tech{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
